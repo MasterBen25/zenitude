@@ -1,0 +1,634 @@
+@font-face {
+    font-family: 'ComfortaaLight';
+    src: url('fonts/ComfortaaLight.eot');
+    src: url('fonts/ComfortaaLight.eot') format('embedded-opentype'),
+         url('fonts/ComfortaaLight.woff2') format('woff2'),
+         url('fonts/ComfortaaLight.woff') format('woff'),
+         url('fonts/ComfortaaLight.ttf') format('truetype'),
+         url('fonts/ComfortaaLight.svg#ComfortaaLight') format('svg');
+}
+@font-face {
+    font-family: 'RalewayExtraLight';
+    src: url('fonts/RalewayExtraLight.eot');
+    src: url('fonts/RalewayExtraLight.eot') format('embedded-opentype'),
+         url('fonts/RalewayExtraLight.woff2') format('woff2'),
+         url('fonts/RalewayExtraLight.woff') format('woff'),
+         url('fonts/RalewayExtraLight.ttf') format('truetype'),
+         url('fonts/RalewayExtraLight.svg#RalewayExtraLight') format('svg');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+  font-size: 1em;
+	font-family: verdana, helvetica, sans-serif;
+}
+
+/*-----------------GLOBAL----------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ComfortaaLight';
+}
+a, p, li {
+  font-family: 'RalewayExtraLight';
+}
+.flex {
+  display: flex;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  flex-direction: column;
+}
+.space {
+  justify-content: space-around;
+}
+.betw {
+  justify-content: space-between;
+}
+/*-------------------CUSTOM-------------------------*/
+
+/*-------------- header ---------------*/
+
+#main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  top: 40%;
+  right: 0;
+  margin-right: 20px;
+}
+#main-nav a {
+  color: #000;
+  background: rgba(255,255,241,0.7);
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 5px 7px;
+  border-radius: 14px;
+  text-align: center;
+  margin: 5px 0;
+}
+#main-nav a:hover {
+  color: #fffff1;
+  background: rgba(0,0,0,0.7);
+}
+#main-header {
+  background-image: url(../image/home-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#main-header h1 {
+  font-size: 8rem;
+}
+#main-header p {
+  font-size: 2.2rem;
+}
+#home {
+  min-height: 80vh;
+}
+
+/*----------------- main -------------------*/
+
+/*========== voyage ==========*/
+
+#voyage {
+  background-image: url(../image/bg-01.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  padding-bottom: 5%;
+}
+#voyage h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 5% 0;
+}
+#voyage h3 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fffff1;
+  margin-bottom: 3%;
+}
+#voyage p {
+  color: #fffff1;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+#voyage img {
+  margin-top: 10%;
+  border-radius: 10%;
+  height: auto;
+  width: 100%;
+}
+.separation {
+  border: 1px solid #fffff1;
+  width: 50%;
+  border-radius: 1px;
+  margin-bottom: 5%;
+}
+.separation2 {
+  border: 1px solid #fffff1;
+  width: 20%;
+  border-radius: 1px;
+  margin-bottom: 5%;
+}
+#colone1, #colone2 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 3vw;
+  padding: 2% 1% 1% 1%;
+  width: 18vw;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/*========== destination ==========*/
+
+#destination {
+  background-image: url(../image/bg-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 5%;
+}
+#destination h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 5% 0;
+}
+#destination p {
+  text-align: center;
+  color: #fffff1;
+  font-size: 2.2rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 30px 30px 0 0;
+  line-height: 2;
+}
+#destination img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0 0 30px 30px;
+}
+.photo-destination {
+  border-radius: 40px;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5%;
+  margin: 50px;
+}
+
+/*========== information ==========*/
+
+#information {
+  background-image: url(../image/bg-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 0;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+}
+#information h2 {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 3%;
+}
+#information h3 {
+  font-size: 2rem;
+  color: #fffff1;
+  text-align: center;
+  margin-bottom: 3%;
+}
+#information p {
+  font-size: 1.4rem;
+  color: #fffff1;
+  padding: 3%;
+}
+#information li {
+  font-size: 1.4rem;
+  list-style-type: circle;
+  list-style-position: inside;
+  line-height: 2;
+}
+#information ul {
+  margin-bottom: 5%;
+}
+#info-general {
+  margin-right: 7%;
+  margin-left: 2%;
+}
+#info-general p {
+  color: #000;
+  line-height: 1.5;
+  padding: 0;
+  margin: 3% 0;
+}
+#info-general a{
+  color: #000;
+  background: rgba(255,255,241,0.7);
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 5px 7px;
+  border-radius: 14px;
+  text-align: center;
+}
+#info-general a:hover {
+  color: #fffff1;
+  background: rgba(0,0,0,0.7);
+}
+.bulle-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+  min-height: 200px;
+  margin: 6% 3%;
+  background: rgba(0,0,0,0.5);
+  border-radius: 1vw;
+  padding: 2%;
+}
+
+/*========== reservation ==========*/
+
+#reservation {
+  background-image: url(../image/plane.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 0 10% 0;
+}
+#reservation h2 {
+  font-size: 5rem;
+  padding: 5% 0;
+}
+#formulaire {
+  background: rgba(0,0,0,0.5);
+  border-radius: 1vw;
+  padding: 2%;
+}
+#formulaire input {
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+  margin: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fffff1;
+}
+#formulaire label {
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+  padding-right: 10px;
+  color: #fffff1;
+}
+#formulaire output, #formulaire p {
+  color: #fffff1;
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+}
+#formulaire select {
+  display: block;
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+  padding: 8px 50px;
+  margin: 10% auto 1% auto;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  background-color: #fffff1;
+}
+#mail {
+  width: 93%;
+}
+#mail2 {
+  width: 95%;
+}
+#slider-semaine {
+  display: flex;
+  align-items: center;
+  font-family: 'RalewayExtraLight';
+  font-size: 1.4rem;
+}
+#slider-semaine input {
+  margin-right: 10px;
+}
+#formulaire input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 5px 50px;
+}
+#formulaire input[type=submit]:hover {
+  color: #fffff1;
+  background: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+/*========== contact ==========*/
+
+#contact {
+  background-image: url(../image/bg-05.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 5px solid #000;
+  padding: 5% 0 10% 0;
+}
+#contact h2 {
+  font-size: 5rem;
+  padding: 5% 0;
+}
+#contact textarea {
+  border: none;
+  border-radius: 10px;
+  background-color: #fffff1;
+  margin: 10px;
+  padding: 10px;
+}
+#formulaire2 {
+  background: rgba(0,0,0,0.5);
+  border-radius: 1vw;
+  padding: 2%;
+}
+#formulaire2 > div > input {
+  width: 40%;
+}
+#formulaire2 input {
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+  margin: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fffff1;
+}
+#formulaire2 label {
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+  padding-right: 10px;
+  color: #fffff1;
+  margin: 10px;
+}
+#formulaire2 output, #formulaire p {
+  color: #fffff1;
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+}
+#formulaire2 select {
+  display: block;
+  font-family: 'RalewayExtraLight';
+  font-size: 1.8rem;
+  padding: 8px 50px;
+  margin: 10% auto 1% auto;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  background-color: #fffff1;
+}
+#formulaire2 input[type=email] {
+  margin-bottom: 50px;
+}
+#formulaire2 input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 5px 50px;
+}
+#formulaire2 input[type=submit]:hover {
+  color: #fffff1;
+  background: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+
+/*----------------- footer -------------------*/
+
+#main-footer {
+  background: rgba(0,0,0,0.5);
+  height: 60px;
+  margin-top: -60px;
+  align-items: center;
+}
+#main-footer div {
+  width: 33%;
+}
+#info-footer p, #info-footer a {
+  margin: 0 1vw;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color:#fffff1;
+}
+#sociaux img {
+  height: 32px;
+  width: 32px;
+  margin: 0 1vw;
+}
+#arrow img {
+  height: 32px;
+  width: 32px;
+  margin: 0 1vw;
+}
+#arrow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*-------------------RESPONSIVE-------------------------*/
+
+@media screen and (max-width: 976px) {
+  #main-nav {
+    display: none;
+  }
+  #main-header h1 {
+    font-size: 10rem;
+  }
+  #main-header p {
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 7rem!important;
+  }
+  #voyage .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+  }
+  #voyage h3 {
+    font-size: 4rem;
+    margin-bottom: 3%;
+  }
+  #voyage p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  #colone1, #colone2 {
+    background: rgba(0,0,0,0.5);
+    border-radius: 3vw;
+    padding: 2% 1% 1% 1%;
+    width: 40vw;
+  }
+  #information {
+    flex-direction: column;
+  }
+  #info-general {
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  #info-general h2 {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (max-width: 720px) {
+  #destination > div {
+    flex-direction: column;
+  }
+  #info-general h2 {
+    line-height: 1.5;
+  }
+  #reservation h2 {
+    text-align: center;
+    line-height: 1.5;
+  }
+  #formulaire2 > div {
+    flex-direction: column;
+  }
+  #formulaire2 > div > input {
+    width: 80%;
+  }
+  #formulaire2 input, #formulaire2 textarea {
+    display: block;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  #formulaire2 label {
+    display: block;
+    text-align: center;
+  }
+  #main-footer {
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    background-color: #333;
+  }
+  #info-footer {
+    width: 100%!important;
+    justify-content: center;
+    margin: 4vw 0;
+  }
+  #arrow {
+    justify-content: center;
+    margin: 4vw 0;
+  }
+}
+@media screen and (max-width: 484px) {
+  #main-header h1 {
+    font-size: 5.4rem;
+  }
+  #main-header p {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 4rem!important;
+  }
+  #voyage h3 {
+    font-size: 2rem;
+  }
+  #colone1, #colone2 {
+    border-radius: 3vw;
+    padding: 2% 1% 1% 1%;
+    width: 50vw;
+  }
+  #destination img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 0 0 30px 30px;
+  }
+  .photo-destination {
+    padding: 2%;
+    margin: 20px;
+  }
+  #info-detail {
+    flex-direction: column;
+  }
+  #formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 444px) {
+  #formulaire {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  #formulaire input {
+    width: 80%;
+  }
+  #formulaire select {
+    display: block;
+    font-family: 'RalewayExtraLight';
+    font-size: 1rem;
+    margin: 10% auto 5% auto;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background-color: #fffff1;
+  }
+  #debut-voyage, #duree-voyage {
+    margin-top: 5%;
+    flex-direction: column;
+  }
+}
